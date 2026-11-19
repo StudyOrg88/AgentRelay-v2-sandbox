@@ -1,0 +1,6 @@
+{
+  "fixture": "agentrelay-v2-sandbox",
+  "revision": 1,
+  "data_classification": "synthetic-public",
+  "expected_result": "pass"
+}

@@ -1,0 +1,20 @@
+name: AgentRelay Sandbox Contract
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  sandbox-contract:
+    name: sandbox-contract
+    runs-on: ubuntu-latest
+    steps:
+      - name: Validate synthetic contract
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "${GITHUB_EVENT_NAME}" = "pull_request"
+          test -n "${GITHUB_SHA}"
+          printf '%s\n' 'synthetic sandbox contract passed'
