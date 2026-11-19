@@ -1,0 +1,7 @@
+{
+  "task": "v2_bootstrap_probe",
+  "purpose": "synthetic permission and check-target validation",
+  "active_probe_authorized": false,
+  "merge_authorized": false,
+  "data_classification": "synthetic-public"
+}
